@@ -1,4 +1,4 @@
 SELECT
     *
 FROM
-    test_yamashita.customer_master
+    sixth-utility-407301.test_yamashita.customer_master
