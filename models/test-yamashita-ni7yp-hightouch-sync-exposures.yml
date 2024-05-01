@@ -2,4 +2,27 @@
 # If you are modifying a dbt model used in Hightouch, please update any linked Hightouch models first!
 
 version: 2
-exposures: []
+exposures:
+  - name: Hightouch-Sync-dbt-send-mails-to-http-request
+    type: application
+    owner:
+      email: directus.yamashita@gmail.com
+      name: 山下康佑
+    depends_on:
+      - ref('mailSends')
+    url: https://app.hightouch.com/test-yamashita-ni7yp/syncs/2170144
+    description: >-
+      Hightouch Sync from dbt model
+      **[mailSends](https://app.hightouch.com/test-yamashita-ni7yp/models/1705638)**
+      to destination **[HTTP
+      Request](https://app.hightouch.com/test-yamashita-ni7yp/destinations/92891)**
+      of type **webhookV2**
+
+
+      ### This sync uses all model columns
+    tags: []
+    meta:
+      hightouch:
+        sync_id: '2170144'
+        sync_slug: dbt-send-mails-to-http-request
+        sync_name: dbt_sendMails
