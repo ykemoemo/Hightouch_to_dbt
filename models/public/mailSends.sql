@@ -1,4 +1,1 @@
-SELECT
-    *
-FROM
-    sixth-utility-407301.test_yamashita.customer_master
+select name, e_mail from sixth-utility-407301.test_d_won.customer_master
