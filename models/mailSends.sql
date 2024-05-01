@@ -1,7 +1,7 @@
 SELECT
     name
-    ,e-mail
+    ,e_mail
 FROM
     sixth-utility-407301.test_d_won.customer_master
 where
-    e-mail = 'directus.yamashita@gmail.com'
+    e_mail = 'directus.yamashita@gmail.com'
